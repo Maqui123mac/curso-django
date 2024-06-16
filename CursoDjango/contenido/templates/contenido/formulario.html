@@ -1,0 +1,22 @@
+
+{% extends "contenido/encabezado.html"%}
+<title> {% block titulo %}Formulario {% endblock%}</title>
+
+{% block contenido %}
+    <h1>Formulario </h1>
+    <h2>Contacto</h2>
+    <p> Nombre: <input type="text" name="Nombre"></p>
+     <p> Correo Electronico: <input type="text" name="Correo Electronico"></p>
+     <p>Curso:
+        <select name="Curso">
+        <option> Robotica colaborativa </option>
+        <option> Robotica Movil </option>
+    </select>
+
+    <input type="radio" name="turno" value="Matutino"> Matutino
+    <input type="radio" name="turno" value="Vespertino"> Vespertino
+    <p> <input type="Button" name="enviar" value="Enviar"/> </p>
+{% endblock%}
+
+
+        
